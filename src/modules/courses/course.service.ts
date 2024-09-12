@@ -91,9 +91,7 @@ const createModuleService = async (
   const course = (await Course.findById(courseId)) as ICourse;
   if (!course) throw new Error("Course not found.");
 
-  const isAuthorized = course.authorizedInstructors?.includes(
-    new Types.ObjectId(userId)
-  );
+  const isAuthorized = checkUserRole(userId, [userRoleConst.admin, userRoleConst.superAdmin, userRoleConst.instructor]);
 
   if (!isAuthorized) {
     throw new Error("You are not authorized to create modules for this course.");

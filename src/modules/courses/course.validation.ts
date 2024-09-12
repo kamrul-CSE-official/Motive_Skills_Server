@@ -82,6 +82,9 @@ const createModuleValidation = z.object({
     description: z.string().optional(),
     contents: z.array(contentValidation),
   }),
+  params: z.object({
+    courseId: z.string().nonempty({ message: "Course ID is required!" }),
+  }),
 });
 
 // Validation for creating content
