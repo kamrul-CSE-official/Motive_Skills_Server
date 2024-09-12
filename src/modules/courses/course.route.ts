@@ -41,8 +41,8 @@ router.patch(
 );
 
 // Route to assign multiple instructors to a course
-router.post(
-  "/assign-instructor/:courseId",
+router.patch(
+  "/assign-instructors/:courseId",
   protectRoute([userRoleConst.admin, userRoleConst.superAdmin]),
   validateRequest(CourseValidations.addInstructorsACourse),
   CourseControllers.assingInstructorsForACourseController
