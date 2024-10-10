@@ -12,13 +12,14 @@ const ReviewSchema: Schema = new Schema(
     },
     rating: {
       type: Number,
-      required: [true, "Rating is required."],
       min: 1,
       max: 5,
+      default: 1,
+      required: [true, "User rating is required."],
     },
     comment: {
       type: String,
-      required: [true, "Comment is required."],
+      required: [true, "User comment is required."],
     },
     createdAt: {
       type: Date,
@@ -28,8 +29,8 @@ const ReviewSchema: Schema = new Schema(
   { timestamps: true }
 );
 
-// Define the CommentSchema
-const CommentSchema: Schema = new Schema(
+// Define the Cueries
+const QueriesSchema: Schema = new Schema(
   {
     userId: {
       type: mongoose.Schema.Types.ObjectId,
@@ -38,7 +39,10 @@ const CommentSchema: Schema = new Schema(
     },
     content: {
       type: String,
-      required: [true, "Comment content is required."],
+      required: [true, "Comment/queries is required."],
+    },
+    replay: {
+      type: String,
     },
     createdAt: {
       type: Date,
@@ -96,20 +100,20 @@ const ContentSchema: Schema = new Schema(
 // Define the ModuleSchema
 const ModuleSchema: Schema = new Schema(
   {
-    _id: { type: mongoose.Schema.Types.ObjectId, auto: true },
+    _id: { type: mongoose.Schema.Types.ObjectId },
     title: {
       type: String,
       required: [true, "Module title is required."],
     },
     id: {
       type: String,
-      default: uuidv4, // Use uuidv4 as the default
+      default: uuidv4, 
       unique: true,
     },
     description: {
       type: String,
     },
-    contents: [ContentSchema], // Embedded array of ContentSchema
+    contents: [ContentSchema], 
   },
   { timestamps: true }
 );
@@ -129,7 +133,6 @@ const CourseSchema: Schema = new Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-        required: [true, "Instructor is required."],
         default: [],
       },
     ],
@@ -167,16 +170,11 @@ const CourseSchema: Schema = new Schema(
       {
         type: mongoose.Schema.Types.ObjectId,
         ref: "User",
-      },
-    ],
-    authorizedInstructors: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "User",
+        default: [],
       },
     ],
     reviews: [ReviewSchema],
-    comments: [CommentSchema],
+    queries: [QueriesSchema],
   },
   { timestamps: true }
 );

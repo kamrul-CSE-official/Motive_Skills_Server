@@ -8,10 +8,12 @@ export default {
   auth: {
     salt_round: Number(process.env.BCRYPT_SALT_ROUNDS) || 5,
     accessTokenSecret: process.env.JWT_SECRET || "",
-    accessTokenExpiresIn: process.env.TOKEN_EXPIRES
+    accessTokenExpiresIn: process.env.TOKEN_EXPIRES || 172800000,
   },
   fileUpload: {
-    api: process.env.CLOUDINARY_API || "https://your-cloudinary-upload-url/api/v1/fileuploader",
-    key: process.env.CLOUDINARY_API_KEY || ""
-  }
+    api:
+      process.env.CLOUDINARY_API ||
+      "https://your-cloudinary-upload-url/api/v1/fileuploader",
+    key: process.env.CLOUDINARY_API_KEY || "",
+  },
 };

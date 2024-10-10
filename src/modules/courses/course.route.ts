@@ -1,124 +1,96 @@
 import express from "express";
+import {
+  createBulkCourses,
+  createContent,
+  createCourse,
+  createModule,
+  getCourseById,
+  getCourses,
+  getFreeCourses,
+  updateContent,
+  updateCourse,
+  updateModule,
+} from "./course.controller";
 import { protectRoute } from "../../middlewares/protectRoute";
 import { userRoleConst } from "../user/user.constants";
-import { CourseControllers } from "./course.controller";
-import validateRequest from "../../middlewares/validateRequest";
-import { CourseValidations } from "./course.validation";
-import upload from "../../middlewares/multerMiddleware";
 
 const router = express.Router();
 
-// Route to create a new course
+router.post(
+  "/bulk",
+  protectRoute([
+    userRoleConst.admin,
+    userRoleConst.instructor,
+    userRoleConst.superAdmin,
+  ]),
+  createBulkCourses
+);
+
+// Course routes
 router.post(
   "/create",
-  upload.single("avatar"),
   protectRoute([
+    userRoleConst.admin,
     userRoleConst.instructor,
-    userRoleConst.admin,
     userRoleConst.superAdmin,
   ]),
-  validateRequest(CourseValidations.courseCreationValidation),
-  CourseControllers.createCourseController
+  createCourse
 );
 
-// Route to update an existing course
-router.patch(
-  "/update/:courseId",
+
+router.put(
+  "/:courseId",
   protectRoute([
     userRoleConst.admin,
+    userRoleConst.instructor,
     userRoleConst.superAdmin,
   ]),
-  validateRequest(CourseValidations.courseUpdateValidation),
-  CourseControllers.updateCourseController
+  updateCourse
 );
 
-// Route to grant instructor access to a user
-router.patch(
-  "/grant-instructor-access/:userId",
-  protectRoute([userRoleConst.admin, userRoleConst.superAdmin]),
-  validateRequest(CourseValidations.assignInstructorValidation),
-  CourseControllers.giveInstructorAccessController
-);
 
-// Route to assign multiple instructors to a course
-router.patch(
-  "/assign-instructors/:courseId",
-  protectRoute([userRoleConst.admin, userRoleConst.superAdmin]),
-  validateRequest(CourseValidations.addInstructorsACourse),
-  CourseControllers.assingInstructorsForACourseController
-);
+router.get("/", getCourses); 
+router.get("/free", getFreeCourses); 
+router.get("/:courseId", getCourseById);
 
-// Route to create a new module in a course
+// Module routes
 router.post(
   "/:courseId/module",
   protectRoute([
-    userRoleConst.instructor,
     userRoleConst.admin,
+    userRoleConst.instructor,
     userRoleConst.superAdmin,
   ]),
-  validateRequest(CourseValidations.createModuleValidation),
-  CourseControllers.createModuleController
+  createModule
+);
+router.put(
+  "/:courseId/module/:moduleId",
+  protectRoute([
+    userRoleConst.admin,
+    userRoleConst.instructor,
+    userRoleConst.superAdmin,
+  ]),
+  updateModule
 );
 
-// Route to add content to a module in a course
+// Content routes
 router.post(
   "/:courseId/module/:moduleId/content",
   protectRoute([
-    userRoleConst.instructor,
     userRoleConst.admin,
+    userRoleConst.instructor,
     userRoleConst.superAdmin,
   ]),
-  validateRequest(CourseValidations.createContentValidation),
-  CourseControllers.createContentController
+  createContent
 );
-
-// Route to delete a course
-router.delete(
-  "/delete/:courseId",
-  protectRoute([
-    userRoleConst.instructor,
-    userRoleConst.admin,
-    userRoleConst.superAdmin,
-  ]),
-  CourseControllers.deleteCourseController
-);
-
-// Route to delete a module from a course
-router.delete(
-  "/:courseId/module/:moduleId",
-  protectRoute([
-    userRoleConst.instructor,
-    userRoleConst.admin,
-    userRoleConst.superAdmin,
-  ]),
-  CourseControllers.deleteModuleController
-);
-
-// Route to delete content from a module in a course
-router.delete(
+router.put(
   "/:courseId/module/:moduleId/content/:contentId",
   protectRoute([
-    userRoleConst.instructor,
     userRoleConst.admin,
+    userRoleConst.instructor,
     userRoleConst.superAdmin,
   ]),
-  CourseControllers.deleteContentController
+  updateContent
 );
 
-// Route to add a review to a course
-router.post(
-  "/review/:courseId",
-  protectRoute([userRoleConst.user]),
-  validateRequest(CourseValidations.addReviewValidation),
-  CourseControllers.addReviewController
-);
-
-// Route to add a comment to a course
-router.post(
-  "/comment/:courseId",
-  protectRoute([userRoleConst.user]),
-  validateRequest(CourseValidations.addCommentValidation),
-  CourseControllers.addCommentController
-);
-
-export const CourseRoutes = router;
+export const courseRoutes = router;

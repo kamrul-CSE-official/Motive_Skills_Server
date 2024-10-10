@@ -7,17 +7,17 @@ import responseTime from 'response-time';
 import mongoSanitize from 'express-mongo-sanitize';
 import serveStatic from 'serve-static';
 
-import globalErrorHandler from "./middlewares/globalErrorHandler";
+// import globalErrorHandler from "./middlewares/globalErrorHandler";
 import notFound from "./middlewares/notFound";
 import { UserRoutes } from "./modules/user/user.route";
-import { CourseRoutes } from "./modules/courses/course.route";
+import { courseRoutes } from "./modules/courses/course.route";
 
 const app = express();
 
 // Rate Limiting
 const limiter = rateLimit({
   windowMs: 20 * 60 * 1000, // 20 minutes
-  max: 500, // Limit each IP to 500 requests per windowMs
+  max: 2000, // Limit each IP to 2000 requests per windowMs
 });
 
 // CORS Configuration
@@ -37,17 +37,19 @@ app.use(mongoSanitize());
 app.use(limiter);
 
 // Static File Serving with Caching
-app.use(serveStatic('public', {
-  maxAge: '1d', // Cache static files for 1 day
-  immutable: true
-}));
+app.use(
+  serveStatic("public", {
+    maxAge: "1d", // Cache static files for 1 day
+    immutable: true,
+  })
+);
 
 // Parsers
 app.use(express.json({ limit: "70kb" })); // Set JSON body limit
 
 // Routes
 app.use("/api/v1/users", UserRoutes);
-app.use("/api/v1/courses", CourseRoutes);
+app.use("/api/v1/courses", courseRoutes);
 
 // Root Route
 app.get("/", (req: Request, res: Response) => {
@@ -55,7 +57,7 @@ app.get("/", (req: Request, res: Response) => {
 });
 
 // Global Error Handler
-app.use(globalErrorHandler);
+// app.use(globalErrorHandler);
 
 // Not Found Handler
 app.use(notFound);

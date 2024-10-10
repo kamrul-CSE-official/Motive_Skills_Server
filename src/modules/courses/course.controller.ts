@@ -1,174 +1,150 @@
 import { Request, Response } from "express";
-import { catchAsync } from "../../utils/catchAsync";
-import { CourseServices } from "./course.service";
-import { uploadImage } from "../../utils/uploadImage";
-import { ICourse, IModule, IContent, IReview, IComment } from "./course.interface";
+import {
+  createBulkCoursesService,
+  createContentService,
+  createCourseService,
+  createModuleService,
+  getCourseByIdService,
+  getCoursesService,
+  getFreeCoursesService,
+  updateContentService,
+  updateCourseService,
+  updateModuleService,
+} from "./course.service";
 
-
-// Controller for creating a course (only by instructor)
-const createCourseController = catchAsync(async (req: Request, res: Response) => {
-  const courseData: ICourse = req.body;
-  const userId: string = req.user?._id?.toString() || "";
-
-  if (req?.file) {
-    const avatarUrl = await uploadImage(req.file);
-    courseData.avatar = avatarUrl || "";
+// Create a course
+export const createCourse = async (req: Request, res: Response) => {
+  try {
+    console.log(req.body);
+    const newCourse = await createCourseService(req.body);
+    console.log("new: ", newCourse);
+    res.status(201).json(newCourse);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ message: (error as Error).message });
   }
+};
 
-  const course = await CourseServices.createCourseService(courseData, userId);
-  res.status(201).json({
-    success: true,
-    message: "Course created successfully",
-    data: course,
-  });
-});
+// Create a module for a course
+export const createModule = async (req: Request, res: Response) => {
+  try {
+    const courseId = req.params.courseId;
+    const moduleData = req.body;
+    const updatedCourse = await createModuleService(courseId, moduleData);
+    res.status(201).json(updatedCourse);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error)?.message });
+  }
+};
 
-// Controller for granting instructor access (admin/super-admin only)
-const giveInstructorAccessController = catchAsync(async (req: Request, res: Response) => {
+// Create content for a module
+export const createContent = async (req: Request, res: Response) => {
+  try {
+    const { courseId, moduleId } = req.params;
+    const contentData = req.body;
+    const updatedModule = await createContentService(
+      courseId,
+      moduleId,
+      contentData
+    );
+    res.status(201).json(updatedModule);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
-  const userId  = req.params?.userId as string;
-  const adminId: string = req.user?._id?.toString() || "";
-  await CourseServices.giveInstructorAccessService(userId, adminId);
+// Update a course
+export const updateCourse = async (req: Request, res: Response) => {
+  try {
+    const courseId = req.params.courseId;
+    const courseData = req.body;
+    const updatedCourse = await updateCourseService(courseId, courseData);
+    res.status(200).json(updatedCourse);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
-  res.status(200).json({
-    success: true,
-    message: "Instructor access granted successfully",
-  });
-});
+// Update a module
+export const updateModule = async (req: Request, res: Response) => {
+  try {
+    const { courseId, moduleId } = req.params;
+    const moduleData = req.body;
+    const updatedModule = await updateModuleService(
+      courseId,
+      moduleId,
+      moduleData
+    );
+    res.status(200).json(updatedModule);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
-// Controller for creating a module (instructor/admin only)
-const createModuleController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-  const moduleData: IModule = req.body;
+// Update content within a module
+export const updateContent = async (req: Request, res: Response) => {
+  try {
+    const { courseId, moduleId, contentId } = req.params;
+    const contentData = req.body;
+    const updatedContent = await updateContentService(
+      courseId,
+      moduleId,
+      contentId,
+      contentData
+    );
+    res.status(200).json(updatedContent);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
-  const course = await CourseServices.createModuleService(courseId, moduleData, userId);
-  res.status(201).json({
-    success: true,
-    message: "Module added successfully",
-    data: course,
-  });
-});
-
-// Controller for creating content (instructor/admin only)
-const createContentController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId, moduleId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-  const contentData: IContent = req.body;
-
-  const course = await CourseServices.createContentService(courseId, moduleId, contentData, userId);
-  res.status(201).json({
-    success: true,
-    message: "Content added successfully",
-    data: course,
-  });
-});
-
-// Controller for updating a course (instructor/admin only)
-const updateCourseController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-  const updateData: Partial<ICourse> = req.body;
-
-  const course = await CourseServices.updateCourseService(courseId, updateData, userId);
-  res.status(200).json({
-    success: true,
-    message: "Course updated successfully",
-    data: course,
-  });
-});
-
-// Controller for adding a review to a course
-const addReviewController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-  const reviewData: Omit<IReview, "userId"> = req.body;
-
-  const course = await CourseServices.addReviewService(courseId, reviewData, userId);
-  res.status(201).json({
-    success: true,
-    message: "Review added successfully",
-    data: course,
-  });
-});
-
-// Controller for adding a comment to a course
-const addCommentController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-  const commentData: Omit<IComment, "userId"> = req.body;
-
-  const course = await CourseServices.addCommentService(courseId, commentData, userId);
-  res.status(201).json({
-    success: true,
-    message: "Comment added successfully",
-    data: course,
-  });
-});
-
-// Controller for deleting a course (instructor/admin only)
-const deleteCourseController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-
-  await CourseServices.deleteCourseService(courseId, userId);
-  res.status(204).json({
-    success: true,
-    message: "Course deleted successfully",
-  });
-});
-
-// Controller for deleting a module from a course (instructor/admin only)
-const deleteModuleController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId, moduleId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-
-  const course = await CourseServices.deleteModuleService(courseId, moduleId, userId);
-  res.status(200).json({
-    success: true,
-    message: "Module deleted successfully",
-    data: course,
-  });
-});
-
-// Controller for deleting content from a module (instructor/admin only)
-const deleteContentController = catchAsync(async (req: Request, res: Response) => {
-  const { courseId, moduleId, contentId } = req.params;
-  const userId: string = req.user?._id?.toString() || "";
-
-  const course = await CourseServices.deleteContentService(courseId, moduleId, contentId, userId);
-  res.status(200).json({
-    success: true,
-    message: "Content deleted successfully",
-    data: course,
-  });
-});
+// Pagination for getting courses
+export const getCourses = async (req: Request, res: Response) => {
+  try {
+    const { page = 1, limit = 9 } = req.query;
+    const courses = await getCoursesService(Number(page), Number(limit));
+    res.status(200).json(courses);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
 
-// Controller for assigne instructors in a course (super admin/admin only)
-const assingInstructorsForACourseController = catchAsync(async (req: Request, res: Response) => {
-  const { instructorIds } = req.body;
-  const {courseId}  = req.params;
-  const userId: string = req.user?._id?.toString() || "";
+// Pagination for getting free courses
+export const getFreeCourses = async (req: Request, res: Response) => {
+  try {
+    const { page = 1, limit = 9 } = req.query;
+    const courses = await getFreeCoursesService(Number(page), Number(limit));
+    res.status(200).json(courses);
+  } catch (error) {
+    res.status(400).json({ message: (error as Error).message });
+  }
+};
 
-  const addedInstructors = await CourseServices.assignInstructorsForACourse(courseId, instructorIds, userId);
-  res.status(200).json({
-    success: true,
-    message: "Assign instructors successfully.",
-    data: addedInstructors,
-  });
-});
+// Get a course by ID
+export const getCourseById = async (req: Request, res: Response) => {
+  try {
+    const courseId = req.params.courseId;
+    const course = await getCourseByIdService(courseId);
+    res.status(200).json(course);
+  } catch (error) {
+    res.status(404).json({ message: (error as Error).message });
+  }
+};
 
-export const CourseControllers = {
-  createCourseController,
-  giveInstructorAccessController,
-  createModuleController,
-  createContentController,
-  updateCourseController,
-  addReviewController,
-  addCommentController,
-  deleteCourseController,
-  deleteModuleController,
-  deleteContentController,
-  assingInstructorsForACourseController
+export const createBulkCourses = async (req: Request, res: Response) => {
+  try {
+    const coursesData = req.body;
+    coursesData.instructors = [req?.user?._id];
+    const createdCourses = await createBulkCoursesService(coursesData);
+    return res
+      .status(201)
+      .json({ message: "Courses created successfully", data: createdCourses });
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({
+      message: "Failed to create courses",
+      error: (error as Error).message,
+    });
+  }
 };
