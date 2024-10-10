@@ -12,9 +12,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const catchAsync_1 = require("../utils/catchAsync");
 const validateRequest = (schema) => {
     return (0, catchAsync_1.catchAsync)((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-        yield schema.parseAsync({
+        const parsedData = yield schema.parseAsync({
             body: req.body,
+            params: req.params, // Add params here
+            query: req.query, // You can also validate query params if needed
         });
+        // Update req with the parsed and validated data
+        req.body = parsedData.body;
+        req.params = parsedData.params;
+        req.query = parsedData.query;
         next();
     }));
 };

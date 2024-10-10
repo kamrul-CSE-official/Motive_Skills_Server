@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.UserRoutes = void 0;
+const express_1 = __importDefault(require("express"));
+const user_controller_1 = require("./user.controller");
+const validateRequest_1 = __importDefault(require("../../middlewares/validateRequest"));
+const user_validation_1 = require("./user.validation");
+const multerMiddleware_1 = __importDefault(require("../../middlewares/multerMiddleware"));
+const protectRoute_1 = require("../../middlewares/protectRoute");
+const user_constants_1 = require("./user.constants");
+const router = express_1.default.Router();
+router.get('/profile', (0, protectRoute_1.protectRoute)([...user_constants_1.userRole]), user_controller_1.userControllers.userProfileController);
+router.get("/instructors/search", user_controller_1.userControllers.searchInstructorsController);
+router.get("/search", user_controller_1.userControllers.searchUsersController);
+router.get("/instructors", user_controller_1.userControllers.instructorController);
+router.post("/create-instructor", (0, protectRoute_1.protectRoute)([user_constants_1.userRole[2], user_constants_1.userRole[3]]), user_controller_1.userControllers.createInstructorController);
+router.post('/register', multerMiddleware_1.default.single('avatar'), (0, validateRequest_1.default)(user_validation_1.UserValidations.userRegistrationValidations), user_controller_1.userControllers.registerController);
+router.post('/login', (0, validateRequest_1.default)(user_validation_1.UserValidations.userLoginValidations), user_controller_1.userControllers.loginController);
+router.post('/logout', (0, validateRequest_1.default)(user_validation_1.UserValidations.userLogoutValidations), user_controller_1.userControllers.logoutController);
+exports.UserRoutes = router;

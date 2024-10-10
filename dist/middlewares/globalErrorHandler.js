@@ -11,75 +11,62 @@ const handleDuplicateError_1 = __importDefault(require("../errors/handleDuplicat
 const AppError_1 = __importDefault(require("../errors/AppError"));
 const config_1 = __importDefault(require("../config"));
 const globalErrorHandler = (err, req, res, next) => {
-    //setting default values
+    // Default error details
     let statusCode = 500;
     let message = "Something went wrong!";
-    let errorSources = [
-        {
-            path: "",
-            message: "Something went wrong",
-        },
-    ];
+    let errorSources = [];
+    // Handling known error types
     if (err instanceof zod_1.ZodError) {
         const simplifiedError = (0, handleZodError_1.default)(err);
-        statusCode = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.statusCode;
-        message = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.message;
-        errorSources = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.errorSources;
+        statusCode = simplifiedError.statusCode;
+        message = simplifiedError.message;
+        errorSources = simplifiedError.errorSources;
     }
     else if ((err === null || err === void 0 ? void 0 : err.name) === "ValidationError") {
         const simplifiedError = (0, handleValidationError_1.default)(err);
-        statusCode = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.statusCode;
-        message = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.message;
-        errorSources = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.errorSources;
+        statusCode = simplifiedError.statusCode;
+        message = simplifiedError.message;
+        errorSources = simplifiedError.errorSources;
     }
     else if ((err === null || err === void 0 ? void 0 : err.name) === "CastError") {
         const simplifiedError = (0, handleCastError_1.default)(err);
-        statusCode = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.statusCode;
-        message = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.message;
-        errorSources = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.errorSources;
+        statusCode = simplifiedError.statusCode;
+        message = simplifiedError.message;
+        errorSources = simplifiedError.errorSources;
     }
     else if ((err === null || err === void 0 ? void 0 : err.code) === 11000) {
         const simplifiedError = (0, handleDuplicateError_1.default)(err);
-        statusCode = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.statusCode;
-        message = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.message;
-        errorSources = simplifiedError === null || simplifiedError === void 0 ? void 0 : simplifiedError.errorSources;
+        statusCode = simplifiedError.statusCode;
+        message = simplifiedError.message;
+        errorSources = simplifiedError.errorSources;
     }
     else if (err instanceof AppError_1.default) {
-        statusCode = err === null || err === void 0 ? void 0 : err.statusCode;
+        statusCode = err.statusCode;
         message = err.message;
         errorSources = [
             {
                 path: "",
-                message: err === null || err === void 0 ? void 0 : err.message,
+                message: err.message,
             },
         ];
     }
     else if (err instanceof Error) {
+        // For generic JS errors
         message = err.message;
         errorSources = [
             {
                 path: "",
-                message: err === null || err === void 0 ? void 0 : err.message,
+                message: err.message,
             },
         ];
     }
-    //ultimate return
-    return res.status(statusCode).json({
+    // Send the response
+    res.status(statusCode).json({
         success: false,
         message,
         errorSources,
-        err,
-        stack: config_1.default.NODE_ENV === "development" ? err === null || err === void 0 ? void 0 : err.stack : null,
+        // Only send stack trace in development mode
+        stack: config_1.default.NODE_ENV === "development" ? err.stack : undefined,
     });
 };
 exports.default = globalErrorHandler;
-//pattern
-/*
-success
-message
-errorSources:[
-  path:'',
-  message:''
-]
-stack
-*/

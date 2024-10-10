@@ -22,7 +22,7 @@ const createMovie = (0, catchAsync_1.catchAsync)((req, res, next) => __awaiter(v
     });
 }));
 const getAllMovies = (0, catchAsync_1.catchAsync)((req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const result = yield movie_service_1.MovieServices.getAllMovies();
+    const result = yield movie_service_1.MovieServices.getAllMovies(req.query);
     res.status(200).json({
         success: true,
         message: "Movies are fetched successfully !",

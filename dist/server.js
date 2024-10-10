@@ -18,13 +18,17 @@ const config_1 = __importDefault(require("./config"));
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
+            // Connect to the database
             yield mongoose_1.default.connect(config_1.default.db_url);
+            console.log("Database connected. 🎁");
+            // Start the server
             app_1.default.listen(config_1.default.port, () => {
-                console.log(`Example app listening on port ${config_1.default.port}`);
+                console.log(`Server is listening on port ${config_1.default.port} ...🏃...`);
             });
         }
-        catch (err) {
-            console.log(err);
+        catch (error) {
+            console.error("Error occurred while starting the server:", error);
+            process.exit(1); // Exit the process with a failure code
         }
     });
 }
