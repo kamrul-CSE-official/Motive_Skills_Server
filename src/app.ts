@@ -1,11 +1,11 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
-import compression from "compression";
+// import compression from "compression";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
-import responseTime from 'response-time';
-import mongoSanitize from 'express-mongo-sanitize';
-import serveStatic from 'serve-static';
+// import responseTime from 'response-time';
+// import mongoSanitize from 'express-mongo-sanitize';
+// import serveStatic from 'serve-static';
 
 // import globalErrorHandler from "./middlewares/globalErrorHandler";
 import notFound from "./middlewares/notFound";
@@ -30,22 +30,23 @@ const corsOptions = {
 
 // Apply Middleware
 app.use(cors(corsOptions));
-app.use(compression());
+// app.use(compression());
 app.use(helmet());
-app.use(responseTime());
-app.use(mongoSanitize());
+// app.use(responseTime());
+// app.use(mongoSanitize());
 app.use(limiter);
 
 // Static File Serving with Caching
+/*
 app.use(
   serveStatic("public", {
-    maxAge: "1d", // Cache static files for 1 day
+    maxAge: "1d", 
     immutable: true,
   })
 );
-
+*/
 // Parsers
-app.use(express.json({ limit: "170kb" })); // Set JSON body limit
+// app.use(express.json({ limit: "170kb" })); 
 
 // Routes
 app.use("/api/v1/users", UserRoutes);

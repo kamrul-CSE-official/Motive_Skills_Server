@@ -5,12 +5,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const compression_1 = __importDefault(require("compression"));
+// import compression from "compression";
 const helmet_1 = __importDefault(require("helmet"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
-const response_time_1 = __importDefault(require("response-time"));
-const express_mongo_sanitize_1 = __importDefault(require("express-mongo-sanitize"));
-const serve_static_1 = __importDefault(require("serve-static"));
+// import responseTime from 'response-time';
+// import mongoSanitize from 'express-mongo-sanitize';
+// import serveStatic from 'serve-static';
 // import globalErrorHandler from "./middlewares/globalErrorHandler";
 const notFound_1 = __importDefault(require("./middlewares/notFound"));
 const user_route_1 = require("./modules/user/user.route");
@@ -30,18 +30,22 @@ const corsOptions = {
 };
 // Apply Middleware
 app.use((0, cors_1.default)(corsOptions));
-app.use((0, compression_1.default)());
+// app.use(compression());
 app.use((0, helmet_1.default)());
-app.use((0, response_time_1.default)());
-app.use((0, express_mongo_sanitize_1.default)());
+// app.use(responseTime());
+// app.use(mongoSanitize());
 app.use(limiter);
 // Static File Serving with Caching
-app.use((0, serve_static_1.default)("public", {
-    maxAge: "1d", // Cache static files for 1 day
+/*
+app.use(
+  serveStatic("public", {
+    maxAge: "1d",
     immutable: true,
-}));
+  })
+);
+*/
 // Parsers
-app.use(express_1.default.json({ limit: "170kb" })); // Set JSON body limit
+// app.use(express.json({ limit: "170kb" })); 
 // Routes
 app.use("/api/v1/users", user_route_1.UserRoutes);
 app.use("/api/v1/courses", course_route_1.courseRoutes);
