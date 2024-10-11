@@ -45,7 +45,7 @@ app.use(
 );
 
 // Parsers
-app.use(express.json({ limit: "70kb" })); // Set JSON body limit
+app.use(express.json({ limit: "170kb" })); // Set JSON body limit
 
 // Routes
 app.use("/api/v1/users", UserRoutes);
