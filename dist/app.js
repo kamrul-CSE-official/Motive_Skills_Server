@@ -41,7 +41,7 @@ app.use((0, serve_static_1.default)("public", {
     immutable: true,
 }));
 // Parsers
-app.use(express_1.default.json({ limit: "70kb" })); // Set JSON body limit
+app.use(express_1.default.json({ limit: "170kb" })); // Set JSON body limit
 // Routes
 app.use("/api/v1/users", user_route_1.UserRoutes);
 app.use("/api/v1/courses", course_route_1.courseRoutes);
