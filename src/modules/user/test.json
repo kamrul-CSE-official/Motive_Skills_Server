@@ -1,0 +1,1887 @@
+[
+  {
+    "_id": "67078abd23d04000162c89a8",
+    "title": "Introduction to Web Development",
+    "description": "Learn the basics of web development, including HTML, CSS, and JavaScript.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg",
+    "duration": "15 hours",
+    "price": 150,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "WEBDEV10",
+        "discount": 10,
+        "_id": "67078abd23d04000162c89a9"
+      },
+      {
+        "key": "SUMMER2024",
+        "discount": 15,
+        "_id": "67078abd23d04000162c89aa"
+      }
+    ],
+    "modules": [
+      {
+        "title": "HTML Basics",
+        "description": "Understanding the structure of web pages.",
+        "contents": [
+          {
+            "type": "text",
+            "title": "Introduction to HTML",
+            "content": "HTML is the standard markup language for creating web pages.",
+            "isPublic": true,
+            "_id": "67078abd23d04000162c89ab",
+            "id": "0bf8871e-a3dc-457c-8664-acaf041c470e",
+            "createdAt": "2024-10-10T08:05:17.779Z",
+            "updatedAt": "2024-10-10T08:05:17.779Z"
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+            "title": "HTML Tutorial",
+            "content": "This video covers the basics of HTML.",
+            "isPublic": true,
+            "_id": "67078abd23d04000162c89ac",
+            "id": "bc912517-7e83-47db-8efd-642c50f86daa",
+            "createdAt": "2024-10-10T08:05:17.779Z",
+            "updatedAt": "2024-10-10T08:05:17.779Z"
+          }
+        ],
+        "id": "efcdb7e2-a0f5-46dc-a997-c733b823586a",
+        "createdAt": "2024-10-10T08:05:17.780Z",
+        "updatedAt": "2024-10-10T08:05:17.780Z"
+      },
+      {
+        "title": "CSS Fundamentals",
+        "description": "Styling web pages with CSS.",
+        "contents": [
+          {
+            "type": "text",
+            "title": "Introduction to CSS",
+            "content": "CSS stands for Cascading Style Sheets.",
+            "isPublic": true,
+            "_id": "67078abd23d04000162c89ad",
+            "id": "ffd4424a-5898-4bda-8a4d-df39db0b30d0",
+            "createdAt": "2024-10-10T08:05:17.780Z",
+            "updatedAt": "2024-10-10T08:05:17.780Z"
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=yfoY53QXEnI",
+            "title": "CSS Crash Course",
+            "content": "A quick crash course on CSS.",
+            "isPublic": true,
+            "_id": "67078abd23d04000162c89ae",
+            "id": "841af9d0-92b9-4c75-ab8e-890ec5a85f47",
+            "createdAt": "2024-10-10T08:05:17.780Z",
+            "updatedAt": "2024-10-10T08:05:17.780Z"
+          }
+        ],
+        "id": "76d8790e-7db6-422e-aa46-19afffc3574c",
+        "createdAt": "2024-10-10T08:05:17.780Z",
+        "updatedAt": "2024-10-10T08:05:17.780Z"
+      }
+    ],
+    "studentsEnrolled": [
+      "643e5a6899c7e4b12c9b50f7",
+      "643e5a6899c7e4b12c9b50f8"
+    ],
+    "reviews": [
+      {
+        "userId": "643e5a6899c7e4b12c9b50f7",
+        "rating": 5,
+        "comment": "This course was amazing! I learned so much.",
+        "createdAt": "2024-01-01T10:00:00.000Z",
+        "_id": "67078abd23d04000162c89af",
+        "updatedAt": "2024-01-01T10:00:00.000Z"
+      },
+      {
+        "userId": "643e5a6899c7e4b12c9b50f8",
+        "rating": 4,
+        "comment": "Great content, but I wish there were more exercises.",
+        "createdAt": "2024-01-02T11:00:00.000Z",
+        "_id": "67078abd23d04000162c89b0",
+        "updatedAt": "2024-01-02T11:00:00.000Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "643e5a6899c7e4b12c9b50f9",
+        "content": "Will this course cover JavaScript?",
+        "replay": "Yes, JavaScript is covered in the later modules.",
+        "createdAt": "2024-01-03T12:00:00.000Z",
+        "_id": "67078abd23d04000162c89b1",
+        "updatedAt": "2024-01-03T12:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-01-01T09:00:00.000Z",
+    "updatedAt": "2024-01-01T09:00:00.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67078b3d23d04000162c89b3",
+    "title": "Advanced JavaScript",
+    "description": "Dive deep into JavaScript, covering ES6+ features and best practices.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-vector/programmers-using-javascript-programming-language-computer-tiny-people-javascript-language-javascript-engine-js-web-development-concept_335657-2412.jpg",
+    "duration": "10 hours",
+    "price": 39.99,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "JS10",
+        "discount": 10,
+        "_id": "67078b3d23d04000162c89b4"
+      }
+    ],
+    "modules": [
+      {
+        "title": "JavaScript Fundamentals",
+        "description": "Understanding the core concepts of JavaScript.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+            "title": "JavaScript Basics",
+            "content": "A beginner's guide to JavaScript.",
+            "isPublic": true,
+            "_id": "67078b3d23d04000162c89b5",
+            "id": "31edf7f4-6481-4dcc-8e6a-3511a6722efd",
+            "createdAt": "2024-10-10T08:07:25.395Z",
+            "updatedAt": "2024-10-10T08:07:25.395Z"
+          },
+          {
+            "type": "text",
+            "title": "Variables and Data Types",
+            "content": "Learn about variables and different data types in JavaScript.",
+            "isPublic": true,
+            "_id": "67078b3d23d04000162c89b6",
+            "id": "e8557f50-0763-47a3-bd8e-b5baec23c634",
+            "createdAt": "2024-10-10T08:07:25.395Z",
+            "updatedAt": "2024-10-10T08:07:25.395Z"
+          }
+        ],
+        "id": "d3f1bf09-546d-42fb-b3e0-4d27350e40a6",
+        "createdAt": "2024-10-10T08:07:25.395Z",
+        "updatedAt": "2024-10-10T08:07:25.395Z"
+      },
+      {
+        "title": "ES6 Features",
+        "description": "Explore the new features introduced in ES6.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=NiX8i0XW3k8",
+            "title": "Understanding ES6",
+            "content": "This video covers ES6 features such as arrow functions, classes, and modules.",
+            "isPublic": true,
+            "_id": "67078b3d23d04000162c89b7",
+            "id": "39031892-dea0-47ba-8112-4cf636108b10",
+            "createdAt": "2024-10-10T08:07:25.395Z",
+            "updatedAt": "2024-10-10T08:07:25.395Z"
+          }
+        ],
+        "id": "433344cd-d435-448d-b44f-5591a81f8ed1",
+        "createdAt": "2024-10-10T08:07:25.395Z",
+        "updatedAt": "2024-10-10T08:07:25.395Z"
+      }
+    ],
+    "studentsEnrolled": ["643e5a6899c7e4b12c9b50f8"],
+    "reviews": [
+      {
+        "userId": "643e5a6899c7e4b12c9b50f8",
+        "rating": 4,
+        "comment": "A comprehensive course that covers everything!",
+        "createdAt": "2024-01-04T13:00:00.000Z",
+        "_id": "67078b3d23d04000162c89b8",
+        "updatedAt": "2024-01-04T13:00:00.000Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "643e5a6899c7e4b12c9b50f7",
+        "content": "Is this course suitable for beginners?",
+        "replay": "Yes, this course starts from the basics.",
+        "createdAt": "2024-01-05T14:00:00.000Z",
+        "_id": "67078b3d23d04000162c89b9",
+        "updatedAt": "2024-01-05T14:00:00.000Z"
+      }
+    ],
+    "createdAt": "2024-01-02T09:00:00.000Z",
+    "updatedAt": "2024-01-02T09:00:00.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67078e0a0fbb814f04c35673",
+    "title": "IELTS Preparation Course",
+    "description": "A comprehensive course designed to help students prepare for the IELTS exam, covering all four skills: Listening, Reading, Writing, and Speaking.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-vector/flat-english-lessons-social-media-post-template_23-2149266456.jpg",
+    "duration": "30 hours",
+    "price": 199.99,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "IELTS2024",
+        "discount": 20,
+        "_id": "67078e0a0fbb814f04c35674"
+      }
+    ],
+    "modules": [
+      {
+        "title": "Listening Skills",
+        "description": "Enhance your listening skills for the IELTS exam.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=Q6C40FqI5jY",
+            "title": "Understanding IELTS Listening",
+            "content": "This video covers the IELTS listening test format and strategies.",
+            "isPublic": true,
+            "_id": "67078e0a0fbb814f04c35675",
+            "id": "2f25cd89-2b84-4589-b0df-06152f9050d3",
+            "createdAt": "2024-10-10T08:19:22.990Z",
+            "updatedAt": "2024-10-10T08:19:22.990Z"
+          },
+          {
+            "type": "text",
+            "title": "Listening Tips",
+            "content": "Learn useful tips for improving your listening skills.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c35676",
+            "id": "06c8b7dc-2c3c-4fb2-a1b0-b3a892fbe866",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "assignment",
+            "assignment": "Complete the listening exercises provided in the course materials.",
+            "title": "Listening Practice",
+            "content": "Practice listening to various accents and types of questions.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c35677",
+            "id": "9bac9d97-8f5b-4d35-99b4-fb27ffda67ea",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          }
+        ],
+        "id": "ae1d7df7-8b42-4875-922d-bd820a988d42",
+        "createdAt": "2024-10-10T08:19:22.991Z",
+        "updatedAt": "2024-10-10T08:19:22.991Z"
+      },
+      {
+        "title": "Reading Skills",
+        "description": "Develop your reading skills to excel in the IELTS reading section.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=lnh_YhWcAV8",
+            "title": "Understanding IELTS Reading",
+            "content": "This video explains the reading test format and types of questions.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c35678",
+            "id": "0f93f0fb-0188-48d5-88fd-a75337586c28",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "text",
+            "title": "Reading Strategies",
+            "content": "Learn effective strategies for answering reading comprehension questions.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c35679",
+            "id": "410ddb64-2754-4cdc-b04a-f7709718ea91",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "assignment",
+            "assignment": "Complete the reading comprehension exercises.",
+            "title": "Reading Practice",
+            "content": "Practice skimming and scanning techniques.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567a",
+            "id": "e13e3407-d11d-4efe-b679-e1ef4b02d35c",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          }
+        ],
+        "id": "bd7d24d4-cd69-4746-8ec8-7834db6ce90d",
+        "createdAt": "2024-10-10T08:19:22.991Z",
+        "updatedAt": "2024-10-10T08:19:22.991Z"
+      },
+      {
+        "title": "Writing Skills",
+        "description": "Master the writing tasks in the IELTS exam.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=HnF6AQ1q5G8",
+            "title": "IELTS Writing Task 1",
+            "content": "Learn how to approach the IELTS Writing Task 1.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567b",
+            "id": "e53f7374-7f96-4ba2-9302-9ca4d2bb5665",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "text",
+            "title": "Writing Task 2 Guide",
+            "content": "A comprehensive guide to writing essays for Task 2.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567c",
+            "id": "9c2192d9-1cd7-47ac-ab8a-743734b1ae2a",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "assignment",
+            "assignment": "Write an essay based on the provided prompt.",
+            "title": "Writing Practice",
+            "content": "Focus on structure, coherence, and vocabulary.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567d",
+            "id": "91200db8-5c5e-4803-a008-ca8cd94f1c01",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          }
+        ],
+        "id": "831b515f-28ed-4144-9a23-3735c8481b40",
+        "createdAt": "2024-10-10T08:19:22.991Z",
+        "updatedAt": "2024-10-10T08:19:22.991Z"
+      },
+      {
+        "title": "Speaking Skills",
+        "description": "Practice your speaking skills for the IELTS speaking test.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=G7l5gZt6W8I",
+            "title": "IELTS Speaking Test Format",
+            "content": "An overview of the speaking test format and scoring.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567e",
+            "id": "7f848c00-39c1-4ab7-8744-da390ca34f7a",
+            "createdAt": "2024-10-10T08:19:22.991Z",
+            "updatedAt": "2024-10-10T08:19:22.991Z"
+          },
+          {
+            "type": "text",
+            "title": "Speaking Strategies",
+            "content": "Tips for answering common speaking test questions.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c3567f",
+            "id": "4ce7eae9-6d94-4c80-a76e-a7a69a6e0336",
+            "createdAt": "2024-10-10T08:19:22.992Z",
+            "updatedAt": "2024-10-10T08:19:22.992Z"
+          },
+          {
+            "type": "assignment",
+            "assignment": "Record a mock speaking test with a partner.",
+            "title": "Speaking Practice",
+            "content": "Focus on fluency, pronunciation, and coherence.",
+            "isPublic": false,
+            "_id": "67078e0a0fbb814f04c35680",
+            "id": "988c9853-6f92-4e64-b255-91ebf3083e3f",
+            "createdAt": "2024-10-10T08:19:22.992Z",
+            "updatedAt": "2024-10-10T08:19:22.992Z"
+          }
+        ],
+        "id": "22e45af8-43b6-4e85-8b81-13ef362e7037",
+        "createdAt": "2024-10-10T08:19:22.992Z",
+        "updatedAt": "2024-10-10T08:19:22.992Z"
+      }
+    ],
+    "studentsEnrolled": [
+      "6433e1986c650f4c1f87ef14",
+      "6433e1986c650f4c1f87ef15"
+    ],
+    "reviews": [
+      {
+        "userId": "6433e1986c650f4c1f87ef16",
+        "rating": 5,
+        "comment": "This course was extremely helpful for my IELTS preparation! Highly recommend.",
+        "_id": "67078e0a0fbb814f04c35681",
+        "createdAt": "2024-10-10T08:19:22.958Z",
+        "updatedAt": "2024-10-10T08:19:22.958Z"
+      },
+      {
+        "userId": "6433e1986c650f4c1f87ef17",
+        "rating": 4,
+        "comment": "Good content, but I wish there were more practice exercises.",
+        "_id": "67078e0a0fbb814f04c35682",
+        "createdAt": "2024-10-10T08:19:22.958Z",
+        "updatedAt": "2024-10-10T08:19:22.958Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "6433e1986c650f4c1f87ef18",
+        "content": "Is there a refund policy for this course?",
+        "replay": "Yes, we offer a 30-day money-back guarantee if you're not satisfied with the course.",
+        "_id": "67078e0a0fbb814f04c35683",
+        "createdAt": "2024-10-10T08:19:22.959Z",
+        "updatedAt": "2024-10-10T08:19:22.959Z"
+      },
+      {
+        "userId": "6433e1986c650f4c1f87ef19",
+        "content": "Will there be live sessions included?",
+        "replay": "Yes, we will have live Q&A sessions every month.",
+        "_id": "67078e0a0fbb814f04c35684",
+        "createdAt": "2024-10-10T08:19:22.959Z",
+        "updatedAt": "2024-10-10T08:19:22.959Z"
+      }
+    ],
+    "createdAt": "2024-10-10T08:19:22.993Z",
+    "updatedAt": "2024-10-10T08:19:22.993Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707c7ce0fbb814f04c3b573",
+    "title": "Web Development Bootcamp",
+    "description": "Master full-stack web development with HTML, CSS, JavaScript, and back-end technologies like Node.js, Express, and MongoDB.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/html-css-collage-concept-with-person_23-2150062008.jpg",
+    "duration": "40 hours",
+    "price": 150,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "BOOTCAMP10",
+        "discount": 10,
+        "_id": "6707c7ce0fbb814f04c3b574"
+      }
+    ],
+    "modules": [
+      {
+        "_id": "651a847df893d25bbd787d10",
+        "title": "Introduction to Web Development",
+        "id": "mod-1234",
+        "description": "Learn the basics of web development and tools you need to get started.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1001",
+            "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+            "title": "Welcome to the Course",
+            "content": "An introduction to the course and how to navigate it.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b575",
+            "createdAt": "2024-10-10T12:25:50.993Z",
+            "updatedAt": "2024-10-10T12:25:50.993Z"
+          },
+          {
+            "type": "text",
+            "id": "cont-1002",
+            "title": "What is Web Development?",
+            "content": "Web development is the work involved in developing a website for the Internet.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b576",
+            "createdAt": "2024-10-10T12:25:50.993Z",
+            "updatedAt": "2024-10-10T12:25:50.993Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.993Z",
+        "updatedAt": "2024-10-10T12:25:50.993Z"
+      },
+      {
+        "_id": "651a847df893d25bbd787d11",
+        "title": "Front-End Basics",
+        "id": "mod-1235",
+        "description": "Dive into HTML, CSS, and JavaScript basics.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1003",
+            "videoUrl": "https://www.youtube.com/watch?v=UB1O30fR-EE",
+            "title": "HTML Basics",
+            "content": "Learn the structure of web pages with HTML.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b577",
+            "createdAt": "2024-10-10T12:25:50.993Z",
+            "updatedAt": "2024-10-10T12:25:50.993Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1004",
+            "videoUrl": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+            "title": "CSS Basics",
+            "content": "Style your web pages with CSS.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b578",
+            "createdAt": "2024-10-10T12:25:50.993Z",
+            "updatedAt": "2024-10-10T12:25:50.993Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1005",
+            "videoUrl": "https://www.youtube.com/watch?v=PkZNo7MFNFg",
+            "title": "JavaScript Basics",
+            "content": "Add interactivity to web pages with JavaScript.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b579",
+            "createdAt": "2024-10-10T12:25:50.993Z",
+            "updatedAt": "2024-10-10T12:25:50.993Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.994Z",
+        "updatedAt": "2024-10-10T12:25:50.994Z"
+      },
+      {
+        "_id": "651a847df893d25bbd787d12",
+        "title": "Back-End Development",
+        "id": "mod-1236",
+        "description": "Learn server-side programming with Node.js and Express.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1006",
+            "videoUrl": "https://www.youtube.com/watch?v=TlB_eWDSMt4",
+            "title": "Introduction to Node.js",
+            "content": "An introduction to server-side programming using Node.js.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57a",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1007",
+            "videoUrl": "https://www.youtube.com/watch?v=L72fhGm1tfE",
+            "title": "Building APIs with Express.js",
+            "content": "Learn how to create RESTful APIs with Express.js.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57b",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.994Z",
+        "updatedAt": "2024-10-10T12:25:50.994Z"
+      },
+      {
+        "_id": "651a847df893d25bbd787d13",
+        "title": "Working with Databases",
+        "id": "mod-1237",
+        "description": "Learn how to interact with databases using MongoDB and Mongoose.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1008",
+            "videoUrl": "https://www.youtube.com/watch?v=FwMwO8pXfq0",
+            "title": "Introduction to MongoDB",
+            "content": "Learn the basics of MongoDB, a NoSQL database.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57c",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1009",
+            "videoUrl": "https://www.youtube.com/watch?v=DZBGEVgL2eE",
+            "title": "CRUD Operations with Mongoose",
+            "content": "Perform basic CRUD operations with MongoDB using Mongoose.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57d",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.994Z",
+        "updatedAt": "2024-10-10T12:25:50.994Z"
+      },
+      {
+        "_id": "651a847df893d25bbd787d14",
+        "title": "Full-Stack Project",
+        "id": "mod-1238",
+        "description": "Build a full-stack web application with all the technologies you've learned.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1010",
+            "videoUrl": "https://www.youtube.com/watch?v=j5P9FHiBVNo",
+            "title": "Setting Up Your Full-Stack Project",
+            "content": "Learn how to set up your full-stack project.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57e",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1011",
+            "videoUrl": "https://www.youtube.com/watch?v=sBGLbiNsTAk",
+            "title": "Deploying Your Web App",
+            "content": "Deploy your full-stack application to the cloud.",
+            "isPublic": false,
+            "_id": "6707c7ce0fbb814f04c3b57f",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.994Z",
+        "updatedAt": "2024-10-10T12:25:50.994Z"
+      },
+      {
+        "_id": "651a847df893d25bbd787d15",
+        "title": "Version Control with Git",
+        "id": "mod-1239",
+        "description": "Learn version control using Git and GitHub.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-1012",
+            "videoUrl": "https://www.youtube.com/watch?v=8JJ101D3knE",
+            "title": "Introduction to Git",
+            "content": "Learn the basics of Git for version control.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b580",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-1013",
+            "videoUrl": "https://www.youtube.com/watch?v=iv8rSLSi1xo",
+            "title": "Collaborating with GitHub",
+            "content": "Learn how to collaborate with other developers using GitHub.",
+            "isPublic": true,
+            "_id": "6707c7ce0fbb814f04c3b581",
+            "createdAt": "2024-10-10T12:25:50.994Z",
+            "updatedAt": "2024-10-10T12:25:50.994Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:25:50.994Z",
+        "updatedAt": "2024-10-10T12:25:50.994Z"
+      }
+    ],
+    "studentsEnrolled": [
+      "651a847df893d25bbd787e7a",
+      "651a847df893d25bbd787e7b"
+    ],
+    "reviews": [
+      {
+        "userId": "651a847df893d25bbd787f8c",
+        "rating": 5,
+        "comment": "Great course! The instructors explain concepts clearly.",
+        "_id": "6707c7ce0fbb814f04c3b582",
+        "createdAt": "2024-10-10T12:25:50.971Z",
+        "updatedAt": "2024-10-10T12:25:50.971Z"
+      },
+      {
+        "userId": "651a847df893d25bbd787f8d",
+        "rating": 4,
+        "comment": "Very informative, but could use more advanced topics.",
+        "_id": "6707c7ce0fbb814f04c3b583",
+        "createdAt": "2024-10-10T12:25:50.972Z",
+        "updatedAt": "2024-10-10T12:25:50.972Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "651a847df893d25bbd787f8e",
+        "content": "Will there be an advanced course after this?",
+        "replay": "Yes, we are planning to release an advanced version soon!",
+        "_id": "6707c7ce0fbb814f04c3b584",
+        "createdAt": "2024-10-10T12:25:50.972Z",
+        "updatedAt": "2024-10-10T12:25:50.972Z"
+      }
+    ],
+    "createdAt": "2024-10-10T12:25:50.994Z",
+    "updatedAt": "2024-10-10T12:25:50.994Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707c88f0fbb814f04c3b673",
+    "title": "Advanced JavaScript and React.js Mastery",
+    "description": "Deep dive into advanced JavaScript concepts and become a React.js expert, learning hooks, state management, and more.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/computer-keyboard-with-blue-backlight-closeup-it-profession-programming-concept_1258-27025.jpg",
+    "duration": "50 hours",
+    "price": 200,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "ADVJS20",
+        "discount": 20,
+        "_id": "6707c88f0fbb814f04c3b674"
+      }
+    ],
+    "modules": [
+      {
+        "_id": "652b947df893d25bbd787e10",
+        "title": "Advanced JavaScript Concepts",
+        "id": "mod-2001",
+        "description": "Master closures, scopes, hoisting, and asynchronous JavaScript.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-2001",
+            "videoUrl": "https://www.youtube.com/watch?v=1JsJx1x35c0",
+            "title": "Understanding Closures",
+            "content": "Learn how closures work in JavaScript and where to use them.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b675",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-2002",
+            "videoUrl": "https://www.youtube.com/watch?v=PoRJizFvM7s",
+            "title": "Asynchronous JavaScript",
+            "content": "Understand promises, async/await, and event loops.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b676",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:29:03.108Z",
+        "updatedAt": "2024-10-10T12:29:03.108Z"
+      },
+      {
+        "_id": "652b947df893d25bbd787e11",
+        "title": "Introduction to React.js",
+        "id": "mod-2002",
+        "description": "Learn the fundamentals of React.js and building dynamic user interfaces.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-2003",
+            "videoUrl": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+            "title": "React.js Components",
+            "content": "Learn about components in React and how to build reusable UIs.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b677",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-2004",
+            "videoUrl": "https://www.youtube.com/watch?v=NCwa_xi0Uuc",
+            "title": "React.js State and Props",
+            "content": "Understand the core concepts of state and props in React.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b678",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:29:03.108Z",
+        "updatedAt": "2024-10-10T12:29:03.108Z"
+      },
+      {
+        "_id": "652b947df893d25bbd787e12",
+        "title": "React Hooks",
+        "id": "mod-2003",
+        "description": "Master React hooks like useState, useEffect, and custom hooks.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-2005",
+            "videoUrl": "https://www.youtube.com/watch?v=0cGSLNp7Q2E",
+            "title": "Understanding useState and useEffect",
+            "content": "Learn how to manage state and side effects with React hooks.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b679",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-2006",
+            "videoUrl": "https://www.youtube.com/watch?v=6ThXsUwLWvc",
+            "title": "Creating Custom Hooks",
+            "content": "Understand how to create and reuse custom hooks in your React app.",
+            "isPublic": false,
+            "_id": "6707c88f0fbb814f04c3b67a",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:29:03.108Z",
+        "updatedAt": "2024-10-10T12:29:03.108Z"
+      },
+      {
+        "_id": "652b947df893d25bbd787e13",
+        "title": "State Management with Redux",
+        "id": "mod-2004",
+        "description": "Manage complex application state using Redux.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-2007",
+            "videoUrl": "https://www.youtube.com/watch?v=CVpUuw9XSjY",
+            "title": "Introduction to Redux",
+            "content": "Get started with Redux for global state management.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b67b",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-2008",
+            "videoUrl": "https://www.youtube.com/watch?v=9boMnm5X9ak",
+            "title": "Using Redux in a React Application",
+            "content": "Learn how to integrate Redux into your React application.",
+            "isPublic": false,
+            "_id": "6707c88f0fbb814f04c3b67c",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:29:03.108Z",
+        "updatedAt": "2024-10-10T12:29:03.108Z"
+      },
+      {
+        "_id": "652b947df893d25bbd787e14",
+        "title": "Building a Full React Application",
+        "id": "mod-2005",
+        "description": "Put everything together and build a fully functional React app.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-2009",
+            "videoUrl": "https://www.youtube.com/watch?v=w7ejDZ8SWv8",
+            "title": "Project Setup and Folder Structure",
+            "content": "Learn how to set up a React project and organize your code.",
+            "isPublic": true,
+            "_id": "6707c88f0fbb814f04c3b67d",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-2010",
+            "videoUrl": "https://www.youtube.com/watch?v=bMknfKXIFA8",
+            "title": "Building Components and Adding Functionality",
+            "content": "Build components and add interactivity to your React app.",
+            "isPublic": false,
+            "_id": "6707c88f0fbb814f04c3b67e",
+            "createdAt": "2024-10-10T12:29:03.108Z",
+            "updatedAt": "2024-10-10T12:29:03.108Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:29:03.108Z",
+        "updatedAt": "2024-10-10T12:29:03.108Z"
+      }
+    ],
+    "studentsEnrolled": [
+      "652b947df893d25bbd787e80",
+      "652b947df893d25bbd787e81"
+    ],
+    "reviews": [
+      {
+        "userId": "652b947df893d25bbd787f92",
+        "rating": 5,
+        "comment": "Amazing course! The React section is very comprehensive.",
+        "_id": "6707c88f0fbb814f04c3b67f",
+        "createdAt": "2024-10-10T12:29:03.101Z",
+        "updatedAt": "2024-10-10T12:29:03.101Z"
+      },
+      {
+        "userId": "652b947df893d25bbd787f93",
+        "rating": 4,
+        "comment": "Great content, but could include more real-world projects.",
+        "_id": "6707c88f0fbb814f04c3b680",
+        "createdAt": "2024-10-10T12:29:03.101Z",
+        "updatedAt": "2024-10-10T12:29:03.101Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "652b947df893d25bbd787f94",
+        "content": "Will there be a section on React Native?",
+        "replay": "Yes, we are planning to add a React Native module soon!",
+        "_id": "6707c88f0fbb814f04c3b681",
+        "createdAt": "2024-10-10T12:29:03.102Z",
+        "updatedAt": "2024-10-10T12:29:03.102Z"
+      }
+    ],
+    "createdAt": "2024-10-10T12:29:03.109Z",
+    "updatedAt": "2024-10-10T12:29:03.109Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707ca070fbb814f04c3b77e",
+    "title": "Complete Graphic Design Masterclass",
+    "description": "Learn graphic design principles and master tools like Adobe Photoshop, Illustrator, and InDesign to create stunning visuals and designs.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/graphic-designer-workspace-with-computer-graphics-tablet_23-2147715609.jpg",
+    "duration": "60 hours",
+    "price": 120,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "GRAPHIC10",
+        "discount": 10,
+        "_id": "6707ca070fbb814f04c3b77f"
+      }
+    ],
+    "modules": [
+      {
+        "_id": "653c057df893d25bbd787f10",
+        "title": "Introduction to Graphic Design",
+        "id": "mod-3001",
+        "description": "Learn the basics of graphic design, key concepts, and software tools.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3001",
+            "videoUrl": "https://www.youtube.com/watch?v=O8i7OKbWmRM",
+            "title": "Welcome to Graphic Design",
+            "content": "An introduction to the course and the world of graphic design.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b780",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          },
+          {
+            "type": "text",
+            "id": "cont-3002",
+            "title": "What is Graphic Design?",
+            "content": "Graphic design is the art of creating visual content to communicate messages.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b781",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.335Z",
+        "updatedAt": "2024-10-10T12:35:19.335Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f11",
+        "title": "Design Principles and Typography",
+        "id": "mod-3002",
+        "description": "Understand the core design principles and the role of typography in design.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3003",
+            "videoUrl": "https://www.youtube.com/watch?v=6DGrYd4phlc",
+            "title": "Principles of Design",
+            "content": "Learn about balance, contrast, emphasis, and other essential design principles.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b782",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3004",
+            "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+            "title": "Typography Basics",
+            "content": "Master the art of typography and its importance in design.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b783",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.335Z",
+        "updatedAt": "2024-10-10T12:35:19.335Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f12",
+        "title": "Adobe Photoshop Mastery",
+        "id": "mod-3003",
+        "description": "Learn Adobe Photoshop for editing photos and creating complex designs.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3005",
+            "videoUrl": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+            "title": "Introduction to Adobe Photoshop",
+            "content": "Get started with Photoshop and understand its interface.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b784",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3006",
+            "videoUrl": "https://www.youtube.com/watch?v=zI2BsR0JLMo",
+            "title": "Working with Layers and Masks",
+            "content": "Learn about layers and masks to create professional designs.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b785",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3007",
+            "videoUrl": "https://www.youtube.com/watch?v=JqDiqRZ4WXM",
+            "title": "Advanced Photo Editing",
+            "content": "Edit photos like a pro with advanced techniques.",
+            "isPublic": false,
+            "_id": "6707ca070fbb814f04c3b786",
+            "createdAt": "2024-10-10T12:35:19.335Z",
+            "updatedAt": "2024-10-10T12:35:19.335Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.335Z",
+        "updatedAt": "2024-10-10T12:35:19.335Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f13",
+        "title": "Adobe Illustrator Mastery",
+        "id": "mod-3004",
+        "description": "Master vector design using Adobe Illustrator to create logos, icons, and illustrations.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3008",
+            "videoUrl": "https://www.youtube.com/watch?v=tXjpzN2dYWY",
+            "title": "Getting Started with Adobe Illustrator",
+            "content": "Understand the basics of vector design and Illustrator's interface.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b787",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3009",
+            "videoUrl": "https://www.youtube.com/watch?v=TDoJSBvK5eY",
+            "title": "Creating Logos and Icons",
+            "content": "Design logos and icons using vector tools in Illustrator.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b788",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3010",
+            "videoUrl": "https://www.youtube.com/watch?v=4uNcDM9Q6_s",
+            "title": "Illustrating Complex Designs",
+            "content": "Create complex illustrations using advanced vector techniques.",
+            "isPublic": false,
+            "_id": "6707ca070fbb814f04c3b789",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.336Z",
+        "updatedAt": "2024-10-10T12:35:19.336Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f14",
+        "title": "Adobe InDesign for Print Design",
+        "id": "mod-3005",
+        "description": "Learn Adobe InDesign for creating professional layouts for print and digital media.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3011",
+            "videoUrl": "https://www.youtube.com/watch?v=YWdfXszHrxE",
+            "title": "Introduction to Adobe InDesign",
+            "content": "Learn the basics of page layout design using Adobe InDesign.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b78a",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3012",
+            "videoUrl": "https://www.youtube.com/watch?v=vREhRAqMjfI",
+            "title": "Creating Magazine Layouts",
+            "content": "Learn to design stunning magazine layouts with InDesign.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b78b",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3013",
+            "videoUrl": "https://www.youtube.com/watch?v=qXb3HYuV5Sk",
+            "title": "Creating Print-Ready Files",
+            "content": "Prepare files for printing with proper color profiles and resolution.",
+            "isPublic": false,
+            "_id": "6707ca070fbb814f04c3b78c",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.336Z",
+        "updatedAt": "2024-10-10T12:35:19.336Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f15",
+        "title": "UX/UI Design Fundamentals",
+        "id": "mod-3006",
+        "description": "Learn the basics of UX and UI design to create user-friendly interfaces.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3014",
+            "videoUrl": "https://www.youtube.com/watch?v=O2WiI9QrS5s",
+            "title": "Introduction to UX Design",
+            "content": "Understand the fundamentals of user experience design.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b78d",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3015",
+            "videoUrl": "https://www.youtube.com/watch?v=3NDH09lK10k",
+            "title": "UI Design Best Practices",
+            "content": "Learn the principles of designing user-friendly interfaces.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b78e",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.336Z",
+        "updatedAt": "2024-10-10T12:35:19.336Z"
+      },
+      {
+        "_id": "653c057df893d25bbd787f16",
+        "title": "Design Portfolio Building",
+        "id": "mod-3007",
+        "description": "Learn how to build a professional design portfolio that stands out.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-3016",
+            "videoUrl": "https://www.youtube.com/watch?v=YHk5IEhfrzM",
+            "title": "Creating a Graphic Design Portfolio",
+            "content": "Learn how to showcase your best work and create a strong portfolio.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b78f",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-3017",
+            "videoUrl": "https://www.youtube.com/watch?v=MLM0vlpWlWo",
+            "title": "Presenting Your Work",
+            "content": "Learn how to effectively present your work to clients or employers.",
+            "isPublic": true,
+            "_id": "6707ca070fbb814f04c3b790",
+            "createdAt": "2024-10-10T12:35:19.336Z",
+            "updatedAt": "2024-10-10T12:35:19.336Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:35:19.336Z",
+        "updatedAt": "2024-10-10T12:35:19.336Z"
+      }
+    ],
+    "studentsEnrolled": [
+      "653c057df893d25bbd787f80",
+      "653c057df893d25bbd787f81"
+    ],
+    "reviews": [
+      {
+        "userId": "653c057df893d25bbd787f92",
+        "rating": 5,
+        "comment": "Fantastic course! It covers everything from basics to advanced design tools.",
+        "_id": "6707ca070fbb814f04c3b791",
+        "createdAt": "2024-10-10T12:35:19.318Z",
+        "updatedAt": "2024-10-10T12:35:19.318Z"
+      },
+      {
+        "userId": "653c057df893d25bbd787f93",
+        "rating": 4,
+        "comment": "Great course, but I would love more real-world examples.",
+        "_id": "6707ca070fbb814f04c3b792",
+        "createdAt": "2024-10-10T12:35:19.318Z",
+        "updatedAt": "2024-10-10T12:35:19.318Z"
+      }
+    ],
+    "queries": [
+      {
+        "userId": "652b947df893d25bbd787f94",
+        "content": "Will there be a section on React Native?",
+        "replay": "Yes, we are planning to add a React Native module soon!",
+        "_id": "6707ca070fbb814f04c3b793",
+        "createdAt": "2024-10-10T12:35:19.318Z",
+        "updatedAt": "2024-10-10T12:35:19.318Z"
+      }
+    ],
+    "createdAt": "2024-10-10T12:35:19.337Z",
+    "updatedAt": "2024-10-10T12:35:19.337Z",
+    "__v": 0
+  },
+  {
+    "_id": "6707ccec0fbb814f04c3bf0e",
+    "title": "Complete React Native Mobile App Development Masterclass",
+    "description": "Master React Native and build cross-platform mobile applications for iOS and Android from scratch. Learn how to design, develop, and deploy apps with React Native, Expo, and other key tools.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/medium-shot-woman-living-as-digital-nomad_23-2151205519.jpg",
+    "duration": "70 hours",
+    "price": 150,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "RNATIVE10",
+        "discount": 10,
+        "_id": "6707ccec0fbb814f04c3bf0f"
+      }
+    ],
+    "modules": [
+      {
+        "_id": "654b057df893d25bbd787f20",
+        "title": "Introduction to React Native",
+        "id": "mod-4001",
+        "description": "Get started with React Native, learn its core features and understand its relevance in mobile development.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-4001",
+            "videoUrl": "https://www.youtube.com/watch?v=uyf8t0GwdWw",
+            "title": "What is React Native?",
+            "content": "An introduction to React Native and how it powers cross-platform mobile apps.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf10",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          },
+          {
+            "type": "text",
+            "id": "cont-4002",
+            "title": "Why Choose React Native?",
+            "content": "A comparison of React Native with other frameworks like Flutter and native development.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf11",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:47:40.463Z",
+        "updatedAt": "2024-10-10T12:47:40.463Z"
+      },
+      {
+        "_id": "654b057df893d25bbd787f21",
+        "title": "Setting Up the Development Environment",
+        "id": "mod-4002",
+        "description": "Learn to set up your development environment for React Native with Expo and CLI.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-4003",
+            "videoUrl": "https://www.youtube.com/watch?v=4oRMj4fuWjM",
+            "title": "Installing Expo CLI",
+            "content": "A guide to installing and configuring Expo CLI for React Native development.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf12",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-4004",
+            "videoUrl": "https://www.youtube.com/watch?v=eoNJD_pvJwc",
+            "title": "Setting Up Emulator for Android & iOS",
+            "content": "Learn how to set up an Android and iOS emulator for development.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf13",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:47:40.463Z",
+        "updatedAt": "2024-10-10T12:47:40.463Z"
+      },
+      {
+        "_id": "654b057df893d25bbd787f22",
+        "title": "React Native Components and Styling",
+        "id": "mod-4003",
+        "description": "Understand React Native components and learn how to style your apps effectively.",
+        "contents": [
+          {
+            "type": "video",
+            "id": "cont-4005",
+            "videoUrl": "https://www.youtube.com/watch?v=KUVdHO3r0iY",
+            "title": "Building UI with React Native Components",
+            "content": "Learn about core components like View, Text, and Image, and how to build UIs.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf14",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          },
+          {
+            "type": "video",
+            "id": "cont-4006",
+            "videoUrl": "https://www.youtube.com/watch?v=1qwt97fZoIE",
+            "title": "Styling in React Native",
+            "content": "Learn to style your app using StyleSheet, Flexbox, and other styling techniques.",
+            "isPublic": true,
+            "_id": "6707ccec0fbb814f04c3bf15",
+            "createdAt": "2024-10-10T12:47:40.463Z",
+            "updatedAt": "2024-10-10T12:47:40.463Z"
+          }
+        ],
+        "createdAt": "2024-10-10T12:47:40.463Z",
+        "updatedAt": "2024-10-10T12:47:40.463Z"
+      },
+      {
+        "title": "Navigation and State Management",
+        "id": "mod-4004",
+        "description": "Learn to add navigation between screens and manage state using React Native.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=d2jWTtRuAcs",
+            "title": "React Navigation Setup",
+            "content": "Learn how to set up React Navigation and navigate between different screens.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=pcsmFPwNFOk",
+            "title": "State Management with Redux",
+            "content": "Introduction to Redux for managing state in React Native apps.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Working with APIs and Data",
+        "description": "Learn to fetch data from APIs and display it in your mobile app.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=hdSrT4yjS1g",
+            "title": "Fetching Data from APIs",
+            "content": "Learn how to fetch and display data from REST APIs using Axios or Fetch.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=VcvJbKfHhz8",
+            "title": "Handling Asynchronous Operations",
+            "content": "Understand how to handle asynchronous calls in React Native apps.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Device Features and Permissions",
+        "description": "Learn how to access device features like camera, GPS, and handle app permissions.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=px12vSNCmaU",
+            "title": "Using the Camera and Media Library",
+            "content": "Learn how to integrate the camera and media library into your app.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=lgQ9RZ2-vu4",
+            "title": "Handling Permissions in React Native",
+            "content": "Understand how to request and manage app permissions.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Deploying Apps to Play Store and App Store",
+        "description": "Learn to build and deploy your React Native app on Google Play and the Apple App Store.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=s1fdgHNL2go",
+            "title": "Deploying to Google Play Store",
+            "content": "A step-by-step guide to deploying your app on the Play Store.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=dsjZdEJZQzI",
+            "title": "Deploying to Apple App Store",
+            "content": "Learn how to build, test, and deploy your app on the Apple App Store.",
+            "isPublic": true
+          }
+        ]
+      }
+    ],
+    "reviews": [
+      {
+        "userId": "67083807ac60d42432ae6fec",
+        "rating": 5,
+        "comment": "Excellent course for anyone looking to get into mobile development with React Native!"
+      },
+      {
+        "userId": "67083807ac60d42432ae6fec",
+        "rating": 4,
+        "comment": "Good content, but I wish there were more real-world projects."
+      }
+    ],
+    "queries": [
+      {
+        "userId": "67083807ac60d42432ae6fec",
+        "content": "Does this course cover TypeScript with React Native?",
+        "replay": "Yes, TypeScript integration will be introduced in a future update!"
+      }
+    ]
+  },
+  {
+    "title": "Mastering Spoken English",
+    "description": "Enhance your spoken English skills with comprehensive lessons focusing on pronunciation, vocabulary, and conversation practice to boost your confidence in speaking.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/side-view-teacher-explaining-chalkboard_23-2148665906.jpg",
+    "duration": "40 hours",
+    "price": 0,
+    "isFree": true,
+    "couponCodes": [
+      {
+        "key": "ENGLISH10",
+        "discount": 10
+      }
+    ],
+    "modules": [
+      {
+        "title": "Introduction to Spoken English",
+        "description": "Get familiar with the basics of spoken English and its importance in daily communication.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=O2WiI9QrS5s",
+            "title": "Welcome to Spoken English",
+            "content": "An introduction to the course and how spoken English can improve your life.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Importance of Spoken English",
+            "content": "Understand why spoken English is crucial for communication in the global world.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Pronunciation and Accent",
+        "description": "Learn the fundamentals of English pronunciation and work on your accent.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=6DGrYd4phlc",
+            "title": "English Sounds and Phonetics",
+            "content": "Learn the basic sounds of English and how to pronounce them correctly.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+            "title": "Accent Reduction Techniques",
+            "content": "Techniques to reduce your accent and sound more natural.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Building Vocabulary",
+        "description": "Expand your vocabulary with practical words and phrases for daily conversation.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+            "title": "Essential Vocabulary for Everyday Conversations",
+            "content": "Learn the most commonly used words in English conversation.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Vocabulary Building Exercises",
+            "content": "Engaging exercises to help you memorize new words.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Conversational English",
+        "description": "Practice speaking through engaging dialogues and role-plays.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=6DGrYd4phlc",
+            "title": "Common Phrases for Daily Conversations",
+            "content": "Master everyday phrases to enhance your conversational skills.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+            "title": "Role-Playing Scenarios",
+            "content": "Engage in role-playing activities to build your confidence in speaking.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Listening and Comprehension",
+        "description": "Improve your listening skills with audio exercises and comprehension activities.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+            "title": "Listening Practice: Conversations",
+            "content": "Practice listening to real conversations and answer comprehension questions.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Listening Tips for Better Understanding",
+            "content": "Learn tips to enhance your listening skills.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Real-World Application",
+        "description": "Apply what you've learned in real-world scenarios and interactions.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=6DGrYd4phlc",
+            "title": "Communicating in Professional Settings",
+            "content": "Tips for effective communication in workplace situations.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=sByzHoiYFX0",
+            "title": "Engaging in Social Conversations",
+            "content": "Learn how to initiate and engage in social conversations.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Advanced Speaking Techniques",
+        "description": "Master advanced techniques for fluent and confident speaking.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=IHNzOHi8sJs",
+            "title": "Using Idioms and Expressions",
+            "content": "Learn common idioms and expressions to sound more fluent.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=6DGrYd4phlc",
+            "title": "Public Speaking Skills",
+            "content": "Tips and techniques for effective public speaking.",
+            "isPublic": true
+          }
+        ]
+      }
+    ],
+    "studentsEnrolled": [],
+    "reviews": [],
+    "queries": []
+  },
+  {
+    "title": "Dance Mastery Course",
+    "description": "Unlock your inner dancer with this comprehensive course covering various dance styles, techniques, and choreography to elevate your skills.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-vector/hand-drawn-flat-design-latin-dance-party-template_23-2149281187.jpg",
+    "duration": "50 hours",
+    "price": 0,
+    "isFree": true,
+    "couponCodes": [
+      {
+        "key": "DANCE10",
+        "discount": 10
+      }
+    ],
+    "modules": [
+      {
+        "title": "Introduction to Dance",
+        "description": "Discover the world of dance, its history, and its significance in culture.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=xyz123",
+            "title": "Welcome to the Dance Mastery Course",
+            "content": "An introduction to the course and the journey ahead.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "The Evolution of Dance",
+            "content": "Explore how dance has evolved over centuries and its cultural impact.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Basic Dance Techniques",
+        "description": "Learn the fundamental techniques that form the basis of all dance styles.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=abc456",
+            "title": "Posture and Alignment",
+            "content": "Understanding proper posture and alignment for effective dancing.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=def789",
+            "title": "Basic Movements",
+            "content": "Learn essential dance movements used across various styles.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Hip Hop Dance",
+        "description": "Dive into the energetic world of hip hop and learn key styles and choreography.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=ghi012",
+            "title": "Hip Hop Basics",
+            "content": "Learn the foundational moves of hip hop dance.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=jkl345",
+            "title": "Choreography: Hip Hop Routine",
+            "content": "Follow along as we create a fun hip hop routine.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Ballet Fundamentals",
+        "description": "Understand the grace and discipline of ballet with essential techniques and movements.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=mno678",
+            "title": "Ballet Positions and Movements",
+            "content": "Learn basic ballet positions and how to execute them.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=pqr901",
+            "title": "Ballet Choreography: Adagio",
+            "content": "Explore a slow and graceful ballet routine.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Contemporary Dance",
+        "description": "Experience the fluidity and expression of contemporary dance.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=stu234",
+            "title": "Contemporary Dance Techniques",
+            "content": "Learn techniques unique to contemporary dance.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=vwx567",
+            "title": "Choreography: Contemporary Routine",
+            "content": "Create an expressive contemporary dance piece.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Dance Fitness",
+        "description": "Combine fun and fitness with dance routines designed to improve your health.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=yzx890",
+            "title": "Dance Cardio Workout",
+            "content": "Follow along for a high-energy dance cardio workout.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Benefits of Dance for Fitness",
+            "content": "Discover how dance can enhance your physical and mental well-being.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Performance and Expression",
+        "description": "Develop your performance skills and learn to express yourself through dance.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=abc123",
+            "title": "Stage Presence and Performance Tips",
+            "content": "Learn how to engage an audience and perform with confidence.",
+            "isPublic": true
+          },
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=xyz789",
+            "title": "Expressive Movement Techniques",
+            "content": "Explore how to convey emotion through dance.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "Final Showcase",
+        "description": "Showcase what you've learned through a final performance.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=def456",
+            "title": "Preparing for Your Final Performance",
+            "content": "Tips for preparing and executing your final performance.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Reflecting on Your Dance Journey",
+            "content": "Take time to reflect on your growth as a dancer.",
+            "isPublic": true
+          }
+        ]
+      }
+    ],
+    "studentsEnrolled": [],
+    "reviews": [],
+    "queries": []
+  },
+  {
+    "title": "Python Programming Course",
+    "description": "Master the art of programming with Python. This course covers everything from the basics to advanced topics, enabling you to build real-world applications.",
+    "instructors": [],
+    "avatar": "https://img.freepik.com/free-photo/python-programming-concept_23-2148458823.jpg",
+    "duration": "60 hours",
+    "price": 99.99,
+    "isFree": false,
+    "couponCodes": [
+      {
+        "key": "PYTHON10",
+        "discount": 10
+      },
+      {
+        "key": "SUMMER2024",
+        "discount": 15
+      }
+    ],
+    "modules": [
+      {
+        "title": "Introduction to Python",
+        "description": "Get started with Python programming, understand its features and setup.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=xyz123",
+            "title": "Welcome to Python Programming",
+            "content": "An introduction to the course and Python programming.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Installing Python and IDEs",
+            "content": "Step-by-step guide to install Python and set up your development environment.",
+            "isPublic": false
+          }
+        ]
+      },
+      {
+        "title": "Basic Concepts",
+        "description": "Learn the fundamental concepts of Python programming.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=abc456",
+            "title": "Variables and Data Types",
+            "content": "Understand variables and data types in Python.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Control Structures",
+            "content": "Learn about if statements, loops, and control flow in Python.",
+            "isPublic": false
+          }
+        ]
+      },
+      {
+        "title": "Advanced Topics",
+        "description": "Dive into advanced programming concepts in Python.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=def789",
+            "title": "Object-Oriented Programming",
+            "content": "Learn the principles of OOP in Python.",
+            "isPublic": true
+          },
+          {
+            "type": "text",
+            "title": "Working with APIs",
+            "content": "Understand how to interact with APIs using Python.",
+            "isPublic": false
+          }
+        ]
+      },
+      {
+        "title": "Data Structures",
+        "description": "Understanding Python's built-in data structures.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=ghi012",
+            "title": "Lists and Tuples",
+            "content": "Learn how to use lists and tuples in Python.",
+            "isPublic": false
+          },
+          {
+            "type": "text",
+            "title": "Dictionaries and Sets",
+            "content": "An introduction to dictionaries and sets in Python.",
+            "isPublic": true
+          }
+        ]
+      },
+      {
+        "title": "File Handling",
+        "description": "Learn how to read and write files in Python.",
+        "contents": [
+          {
+            "type": "video",
+            "videoUrl": "https://www.youtube.com/watch?v=jkl345",
+            "title": "Reading Files",
+            "content": "How to read files using Python.",
+            "isPublic": false
+          },
+          {
+            "type": "text",
+            "title": "Writing Files",
+            "content": "Step-by-step guide on writing files in Python.",
+            "isPublic": true
+          }
+        ]
+      }
+    ],
+    "studentsEnrolled": [],
+    "reviews": [],
+    "queries": []
+  }
+]
